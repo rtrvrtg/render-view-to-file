@@ -13,11 +13,13 @@ Right now, there's no integration with other modules beyond that of allowing acc
 
 The most simple way of invoking it is as follows:
 
+```php
 $filename = "public://name-of-file.html";
 
 $vr = new ViewRenderer($view_name, $display_id);
 $vr->arguments($args);
 $file = $vr->render($filename);
+```
 
 This module also offers support for exposed input using the exposedInput method, and offsets via the offset method.
 
